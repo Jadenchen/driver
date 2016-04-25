@@ -1,0 +1,9 @@
+command 
+
+devone.ko
+1. insmod devone.ko
+2. mknod --mod=644 /dev/devone c `grep devone /proc/devices | awk '{print $1;}'` 0
+3. hexdump -C -n 16 /dev/devone
+
+wakeup.ko
+1. insmod wakeup.ko
