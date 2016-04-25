@@ -1,0 +1,1 @@
+cmd_/home/menzx/Desktop/prac/driver/poll/devone.ko := ld -r -m elf_i386 -T /usr/src/linux-headers-3.13.0-71-generic/scripts/module-common.lds --build-id  -o /home/menzx/Desktop/prac/driver/poll/devone.ko /home/menzx/Desktop/prac/driver/poll/devone.o /home/menzx/Desktop/prac/driver/poll/devone.mod.o

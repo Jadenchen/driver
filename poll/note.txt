@@ -1,0 +1,12 @@
+method change
+1.
+ioctl -> unlocked_ioctl
+
+2.
+register class 
+(1) class_create
+(2) device_create
+
+unregister class
+(1) class_destroy
+(2) device_destroy
