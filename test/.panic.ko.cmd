@@ -1,0 +1,1 @@
+cmd_/home/menzx/Desktop/prac/driver/test/panic.ko := ld -r -m elf_i386 -Map /home/menzx/Desktop/prac/driver/test/panic.map -T /usr/src/linux-headers-3.13.0-71-generic/scripts/module-common.lds --build-id  -o /home/menzx/Desktop/prac/driver/test/panic.ko /home/menzx/Desktop/prac/driver/test/panic.o /home/menzx/Desktop/prac/driver/test/panic.mod.o

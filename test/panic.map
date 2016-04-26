@@ -1,0 +1,108 @@
+
+Memory Configuration
+
+Name             Origin             Length             Attributes
+*default*        0x0000000000000000 0xffffffffffffffff
+
+Linker script and memory map
+
+
+.note.gnu.build-id
+                0x0000000000000000       0x24
+ .note.gnu.build-id
+                0x0000000000000000       0x24 /home/menzx/Desktop/prac/driver/test/panic.o
+
+.text           0x0000000000000000       0x3c
+ .text          0x0000000000000000       0x39 /home/menzx/Desktop/prac/driver/test/panic.o
+                0x0000000000000000                init_module
+                0x0000000000000020                cleanup_module
+ *fill*         0x0000000000000039        0x3 00
+ .text          0x000000000000003c        0x0 /home/menzx/Desktop/prac/driver/test/panic.mod.o
+
+/DISCARD/
+ *(.discard)
+
+__ksymtab       0x000000000000003c        0x8
+ *(SORT(___ksymtab+*))
+ ___ksymtab+g_4
+                0x000000000000003c        0x8 /home/menzx/Desktop/prac/driver/test/panic.o
+                0x000000000000003c                __ksymtab_g_4
+
+__ksymtab_gpl
+ *(SORT(___ksymtab_gpl+*))
+
+__ksymtab_unused
+ *(SORT(___ksymtab_unused+*))
+
+__ksymtab_unused_gpl
+ *(SORT(___ksymtab_unused_gpl+*))
+
+__ksymtab_gpl_future
+ *(SORT(___ksymtab_gpl_future+*))
+
+__kcrctab       0x0000000000000044        0x4
+ *(SORT(___kcrctab+*))
+ ___kcrctab+g_4
+                0x0000000000000044        0x4 /home/menzx/Desktop/prac/driver/test/panic.o
+
+.rodata.str1.1  0x0000000000000000       0x1a
+ .rodata.str1.1
+                0x0000000000000000       0x1a /home/menzx/Desktop/prac/driver/test/panic.o
+
+.modinfo        0x0000000000000000       0x73
+ .modinfo       0x0000000000000000        0xc /home/menzx/Desktop/prac/driver/test/panic.o
+ .modinfo       0x000000000000000c       0x67 /home/menzx/Desktop/prac/driver/test/panic.mod.o
+
+__ksymtab_strings
+                0x0000000000000000        0x4
+ __ksymtab_strings
+                0x0000000000000000        0x4 /home/menzx/Desktop/prac/driver/test/panic.o
+
+__mcount_loc    0x0000000000000000        0x8
+ __mcount_loc   0x0000000000000000        0x8 /home/menzx/Desktop/prac/driver/test/panic.o
+
+__versions      0x0000000000000000       0xc0
+ __versions     0x0000000000000000       0xc0 /home/menzx/Desktop/prac/driver/test/panic.mod.o
+
+.data           0x0000000000000000        0x0
+ .data          0x0000000000000000        0x0 /home/menzx/Desktop/prac/driver/test/panic.o
+ .data          0x0000000000000000        0x0 /home/menzx/Desktop/prac/driver/test/panic.mod.o
+
+.gnu.linkonce.this_module
+                0x0000000000000000      0x180
+ .gnu.linkonce.this_module
+                0x0000000000000000      0x180 /home/menzx/Desktop/prac/driver/test/panic.mod.o
+                0x0000000000000000                __this_module
+
+.bss            0x0000000000000000        0xc
+ .bss           0x0000000000000000        0xc /home/menzx/Desktop/prac/driver/test/panic.o
+                0x0000000000000000                g_4
+                0x0000000000000004                g_2
+                0x0000000000000008                g
+ .bss           0x000000000000000c        0x0 /home/menzx/Desktop/prac/driver/test/panic.mod.o
+
+__kcrctab_gpl
+ *(SORT(___kcrctab_gpl+*))
+
+__kcrctab_unused
+ *(SORT(___kcrctab_unused+*))
+
+__kcrctab_unused_gpl
+ *(SORT(___kcrctab_unused_gpl+*))
+
+__kcrctab_gpl_future
+ *(SORT(___kcrctab_gpl_future+*))
+LOAD /home/menzx/Desktop/prac/driver/test/panic.o
+LOAD /home/menzx/Desktop/prac/driver/test/panic.mod.o
+OUTPUT(/home/menzx/Desktop/prac/driver/test/panic.ko elf32-i386)
+
+.comment        0x0000000000000000       0x56
+ .comment       0x0000000000000000       0x2b /home/menzx/Desktop/prac/driver/test/panic.o
+ .comment       0x000000000000002b       0x2b /home/menzx/Desktop/prac/driver/test/panic.mod.o
+
+.note.GNU-stack
+                0x0000000000000000        0x0
+ .note.GNU-stack
+                0x0000000000000000        0x0 /home/menzx/Desktop/prac/driver/test/panic.o
+ .note.GNU-stack
+                0x0000000000000000        0x0 /home/menzx/Desktop/prac/driver/test/panic.mod.o
